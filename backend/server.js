@@ -25,7 +25,7 @@ app.use(express.json());
 const allowedOrigins = [
   'http://localhost:4173',
   'http://192.168.1.33:4173',
-  'http://172.23.128.1:4173',
+
   'http://192.168.1.34:8081',
   'http://localhost:5173',
   'https://productiondomain' // add your production domain here
@@ -330,7 +330,7 @@ const server = http.createServer(app);
 // Initialize socket.io with CORS options matching the frontend
 const io = new Server(server, {
   cors: {
-    origin: ['http://localhost:5173', 'http://localhost:4173', 'https://vehcheck.recman.com', 'http://192.168.1.34:8081'],
+    origin: ['http://localhost:5173', 'http://localhost:4173', 'https://productiondomain', 'http://192.168.1.34:8081'],
     methods: ['GET', 'POST'],
     credentials: true,
   },
