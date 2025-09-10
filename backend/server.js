@@ -28,7 +28,7 @@ const allowedOrigins = [
   'http://172.23.128.1:4173',
   'http://192.168.1.34:8081',
   'http://localhost:5173',
-  'https://vehcheck.recman.com' // add your production domain here
+  'https://productiondomain' // add your production domain here
 ];
 
 app.use(cors({
